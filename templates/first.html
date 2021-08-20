@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+        background-color: red;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>First Page</h1>
+
+<form action="{% url 'second' %}">
+    <label for="start">FROM date:</label>
+    <input type="datetime-local" id="start" name="dfrom">
+    <br><br>
+    <label for="start">TO date:</label>
+    <input type="datetime-local" id="start" name="dto">
+    <br><br>
+
+<input type="submit" value="Click here for send the dates">
+</form>
+</body>
+</html>
